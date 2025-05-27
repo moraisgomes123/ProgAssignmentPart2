@@ -129,7 +129,7 @@ public class Message {
         switch (action) {
             case 0 -> {
                 // User chose to send the message
-                messageList.add("SENT -> ID: " + messageID + ", To: " + recipient + ", Hash: " + messageHash);
+                messageList.add("SENT -> ID: " + messageID + ", To: " + recipient + ", Message: " + messageText + ", Hash: " + messageHash);
                 JOptionPane.showMessageDialog(null, "Message sent successfully.");
             }
             case 1 -> {
@@ -138,7 +138,7 @@ public class Message {
             }
             case 2 -> {
                 // User chose to store the message for later
-                messageList.add("PENDING -> ID: " + messageID + ", To: " + recipient + ", Hash: " + messageHash);
+                messageList.add("PENDING -> ID: " + messageID + ", To: " + recipient + ", Message: " + messageText + ", Hash: " + messageHash);
                 JOptionPane.showMessageDialog(null, "Message stored for later.");
             }
             default -> {
